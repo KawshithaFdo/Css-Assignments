@@ -5,6 +5,7 @@
     <title>Case03</title>
 
     <style>
+
         body>section:nth-child(1)>div:nth-child(1){
             width: 300px;
             height: 300px;
@@ -31,51 +32,79 @@
             left: 0;
             margin: auto;
         }
-        body>section:nth-child(2)>div{
-            position: relative;
+
+        body>section>section{
+           /* position: relative;*/
             height: 700px;
             border: 2px solid red;
         }
-        body>section:nth-child(2)>div:nth-child(1){
-            width: 230px;
-            height: 230px;
+        body>section:nth-child(2)>section:nth-child(1){
+            width: 240px;
+            height: 240px;
             border: 20px solid purple;
             background: purple;
             border-radius: 100%;
-            position: absolute;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            margin: auto;
+            position: relative;
+            margin-left: 612px;
+            margin-top: 238px;
+            margin-bottom: 240px;
         }
-        body>section:nth-child(2)>div:nth-child(2){
-            width: 230px;
-            height: 230px;
+        body>section:nth-child(2)>section:nth-child(2) {
+            width: 240px;
+            height: 240px;
             border: 20px solid cornflowerblue;
             background: cornflowerblue;
             border-radius: 100%;
-            position: absolute;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            margin: auto;
+            position: relative;
+            margin-left: 612px;
+            margin-top: 238px;
+            margin-bottom: 240px;
+        }
+        body>section:nth-child(2)>section:nth-child(3) {
+            width: 240px;
+            height: 240px;
+            border: 20px solid #e76a08;
+            background: #e76a08;
+            border-radius: 100%;
+            position: relative;
+            margin-left: 612px;
+            margin-top: 238px;
+            margin-bottom: 240px;
+        }
+        body>section:nth-child(2)>section:nth-child(1)>h1{
+            font-size: 45px;
+            color: white;
+            margin-left: 85px;
+            margin-right: 0;
+            margin-top: 98px;
+            margin-bottom: 0;
+        }
+        body>section:nth-child(2)>section:nth-child(2)>h1{
+            font-size: 45px;
+            color: white;
+            margin-left: 40px;
+            margin-right: 0;
+            margin-top: 80px;
+            margin-bottom: 0;
+        }
+        body>section:nth-child(2)>section:nth-child(2)>h1:nth-child(2){
+            font-size: 45px;
+            color: white;
+            margin-left: 90px;
+            margin-right: 0;
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+        body>section:nth-child(2)>section:nth-child(3)>h1{
+            font-size: 40px;
+            color: white;
+            text-align: justify-all;
+            margin-left: 30px;
+            margin-right: 0;
+            margin-top: 14px;
+            margin-bottom: 0;
         }
 
-        body>section:nth-child(2)div:nth-child(3){
-            width: 230px;
-            height: 230px;
-            border: 20px solid sandybrown;
-            background: sandybrown;
-            border-radius: 100%;
-            position: absolute;
-            /*right: 0;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            margin: auto;*/
-        }
 
     </style>
 </head>
@@ -86,9 +115,16 @@
     </section>
 
     <section>
-        <div></div>
-        <div></div>
-        <div></div>
+        <section>
+            <h1>Hello</h1>
+        </section>
+        <section>
+            <h1>Welcome</h1>
+            <h1>To</h1>
+        </section>
+        <section>
+            <h1>Institute<br> of <br>Software <br>Engineering</h1>
+        </section>
     </section>
 
 </body>
