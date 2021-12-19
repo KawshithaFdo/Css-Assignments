@@ -18,10 +18,10 @@
             left: 0;
             height: 50px;
             margin: 0;
-            background-color: red;
+            background-color: orangered;
         }
 
-       body section:nth-child(1) div{
+       body section:nth-child(1){
            background-color: white;
        }
        body section:nth-child(1) div h1{
@@ -31,11 +31,9 @@
            margin-top: 250px;
        }
 
-
-
        /*Section 02*/
 
-       body section:nth-child(2) h1{
+       body section:nth-child(2)>h1{
            color: white;
            font-size: 40px;
            position: sticky;
@@ -46,9 +44,18 @@
            background-color: blue;
        }
 
+       body section:nth-child(2){
+           background-color: cornflowerblue;
+       }
+       body section:nth-child(2) div h1{
+           color: black;
+           font-size: 200px;
+           margin-left: 500px;
+           margin-top: 250px;
+       }
        /*Section 03*/
 
-       body section:nth-child(3) h1{
+       body section:nth-child(3)>h1{
            color: white;
            font-size: 40px;
            position: sticky;
@@ -58,10 +65,19 @@
            margin: 0;
            background-color: black;
        }
+       body section:nth-child(3){
+           background-color: gray;
+       }
+       body section:nth-child(3) div h1{
+           color: black;
+           font-size: 200px;
+           margin-left: 500px;
+           margin-top: 250px;
+       }
 
        /*Section 04*/
 
-       body section:nth-child(4) h1{
+       body section:nth-child(4)>h1{
            color: white;
            font-size: 40px;
            position: sticky;
@@ -69,7 +85,16 @@
            left: 0;
            height: 50px;
            margin: 0;
-           background-color: #e88439;
+           background-color: #890202;
+       }
+       body section:nth-child(4){
+           background-color: red;
+       }
+       body section:nth-child(4) div h1{
+           color: black;
+           font-size: 200px;
+           margin-left: 500px;
+           margin-top: 250px;
        }
     </style>
 </head>
@@ -81,15 +106,15 @@
 </section>
 <section>
     <h1>Card 2</h1>
-    <div></div>
+    <div><h1>How</h1></div>
 </section>
 <section>
     <h1>Card 3</h1>
-    <div></div>
+    <div><h1>Are</h1></div>
 </section>
 <section>
     <h1>Card 4</h1>
-    <div></div>
+    <div><h1>You..?</h1></div>
 </section>
 
 </body>
