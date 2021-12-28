@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <title>Case 04</title>
     <style>
+        body{
+            overflow: hidden;
+        }
+        section{
+            width: 1000px;
+            height: 400px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            overflow: hidden;
+        }
         section>div{
             overflow: hidden;
         }
@@ -16,27 +29,51 @@
         section>div:nth-child(1)>img{
             height: 300px;
         }
-        section>div:nth-child(2)>img{
-/*
-            width: 1500px;
-*/
+        section>section>div{
+            display: flex;
+            overflow: hidden;
+            background-color: darkmagenta;
+            background-size: cover;
+        }
+        section>section>div:nth-child(1)>img{
             overflow: hidden;
             background-size: cover;
             height: 160px;
             margin-top: 140px;
-            animation-name: key;
-            animation-duration: 10s;
-            animation-direction: alternate;
+            animation-name: road;
+            animation-duration: 5s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+        }
+        section>section>div:nth-child(2)>img{
+            overflow: hidden;
+            background-size: cover;
+            height: 160px;
+            margin-top: 140px;
+            margin-left: 1000px;
+            animation-name: road;
+            animation-duration: 5s;
+            animation-direction: normal;
             animation-iteration-count: infinite;
         }
         section>div:nth-child(3)>img{
             margin-top: 300px;
             height: 190px;
-            /*animation-name: key;
-            animation-duration: 10s;
-            animation-direction: alternate;
-            animation-iteration-count: infinite;*/
+            width: 4000px;
+            animation-name: road;
+            animation-duration: 5s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
         }
+        @keyframes road {
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(-75%);
+            }
+        }
+
         section>div:nth-child(4)>img{
             height: 100px;
             width: 280px;
@@ -77,7 +114,10 @@
 <body>
 <section>
     <div><img src="assets/sky.jpg" alt=""></div>
-    <div><img src="assets/city.png" alt=""></div>
+    <section>
+        <div><img src="assets/city.png" alt=""></div>
+        <div><img src="assets/city.png" alt=""></div>
+    </section>
     <div><img src="assets/road.jpg" alt=""></div>
     <div><img src="assets/car.png" alt=""></div>
     <div><img src="assets/wheel.png" alt="">
