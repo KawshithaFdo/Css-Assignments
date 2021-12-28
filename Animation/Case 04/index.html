@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <title>Case 04</title>
     <style>
+        section>div{
+            overflow: hidden;
+        }
         section>div>img{
+            overflow: hidden;
             position: absolute;
             width: 1000px;
            display: flex;
@@ -13,12 +17,25 @@
             height: 300px;
         }
         section>div:nth-child(2)>img{
+/*
+            width: 1500px;
+*/
+            overflow: hidden;
+            background-size: cover;
             height: 160px;
             margin-top: 140px;
+            animation-name: key;
+            animation-duration: 10s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
         }
         section>div:nth-child(3)>img{
             margin-top: 300px;
             height: 190px;
+            /*animation-name: key;
+            animation-duration: 10s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;*/
         }
         section>div:nth-child(4)>img{
             height: 100px;
@@ -33,11 +50,27 @@
             width: 51px;
             margin-top: 305px;
             left: 324px;
+            animation-name: wheels;
+            animation-duration: 5s;
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
         }
         section>div:nth-child(5)>img:nth-child(2){
             width: 51px;
             margin-top: 305px;
             left: 495px;
+            animation-name: wheels;
+            animation-duration: 5s;
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+        }
+        @keyframes wheels {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
         }
     </style>
 </head>
